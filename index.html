@@ -77,6 +77,7 @@
         // fix: Refused to display 'https://www.google.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.
         // https://stackoverflow.com/a/70176445/10440128
         // "igu=1" is needed to show google in iframe
+        // FIXME this will always show the "cookie consent" popup. (fuck the EU!)
         const urlFrame = "https://www.google.com/search?igu=1&" + query;
 
         const a = document.createElement("a");
